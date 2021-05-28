@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <head>
+        <title>Meu Portifolio</title>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            body{
+                background-color: #e7e7e7;
+                padding: 20px;
+                font-family: 'Times New Roman', Times, serif;
+            }
+            .main{
+                max-width: 1000px;
+                margin: auto;
+            }
+            h1{
+                font-size: 50px;
+                word-break: break-all;
+            }
+            .row{
+                margin: 8px -16px;
+            }
+            .row,
+            .row>.column{
+                padding: 8px;
+            }
+            .row::after{
+                content: "";
+                display: table;
+                clear: both;
+            }
+            .column{
+                float: left;
+                width: 25%;
+            }
+            @media screen and (max-width:900px){
+                .column{
+                    width: 50%;
+                }
+            }
+            @media screen and (max-width:600px){
+                .column{
+                    width: 100%;
+                }
+            }
+            .content{
+                background-color: white;
+                padding: 10px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="main">
+            <h1>Meu Portifolio</h1>
+            <hr/>
+            <h2>Franciel Ruam Ferreira Santos</h2>
+            <p>Bom, me chamo Franciel tenho 21 anos de idade e estou cursando atualmente o 3º ano de Engenharia de Software
+                no Instituto Federal do Paraná - Campus Paranavaí. Inicie recentemente num cargo como desenvolvedor back-end 
+                na empresa Upcode, com a situação do momento de COVID-19 os trabalhos são todos realizados de forma remota.
+            </p>
+            <p>CONTATOS EM ADICIONAR DE INSTAGRAN / FACEBOOK / LINKDIN E GITHUB</p>
+
+            <div class="row">
+                <div class="column">
+                    <div class="content">
+                        <img src="imagens/imagem1.png" alt="Imagem Teste" style="width: 100%;">
+                        <h3>Projeto 01</h3>
+                        <p>Lorem ipsum lacinia ornare sed lectus est iaculis himenaeos, quam tempor varius sed tempus metus urna taciti, ligula
+                           arcu mi pellentesque facilisis cras malesuada. cubilia vehicula nibh volutpat, auctor purus.</p>
+                    </div>
+                </div>
+                
+                <div class="column">
+                    <div class="content">
+                        <img src="imagens/imagem2.png" alt="Imagem Teste" style="width: 100%;">
+                        <h3>Projeto 02</h3>
+                        <p>Lorem ipsum lacinia ornare sed lectus est iaculis himenaeos, quam tempor varius sed tempus metus urna taciti, ligula
+                            arcu mi pellentesque facilisis cras malesuada. cubilia vehicula nibh volutpat, auctor purus.</p>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="content">
+                        <img src="imagens/imagem3.png" alt="Imagem Teste" style="width: 100%;">
+                        <h3>Projeto 03</h3>
+                        <p align="justify" >Lorem ipsum lacinia ornare sed lectus est iaculis himenaeos, quam tempor varius sed tempus metus urna taciti, ligula
+                            arcu mi pellentesque facilisis cras malesuada. cubilia vehicula nibh volutpat, auctor purus.</p>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="content">
+                        <img src="imagens/imagem4.png" alt="Imagem Teste" style="width: 100%;">
+                        <h3>Projeto 04</h3>
+                        <p>Lorem ipsum lacinia ornare sed lectus est iaculis himenaeos, quam tempor varius sed tempus metus urna taciti, ligula
+                            arcu mi pellentesque facilisis cras malesuada. cubilia vehicula nibh volutpat, auctor purus.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="content"> 
+                <img src="./imagens/imagem5.png" style="width: 100%;">
+                <h3>Projeto Principal</h3>
+                <p>Lorem ipsum lacinia ornare sed lectus est iaculis himenaeos, quam tempor varius sed tempus metus urna taciti, ligula
+                    arc</p>
+            </div>
+        </div>
+    </body>
+</html>
