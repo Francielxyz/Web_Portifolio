@@ -1,114 +1,169 @@
 <!DOCTYPE html>
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://kit.fontawesome.com/069f1ddc3b.js" crossorigin="anonymous"></script>
 
-    <head>
-        <title>Meu Portifolio</title>
-        <style>
-            *{
-                box-sizing: border-box;
-            }
-            body{
-                background-color: #e7e7e7;
-                padding: 20px;
-                font-family: 'Times New Roman', Times, serif;
-            }
-            .main{
-                max-width: 1000px;
-                margin: auto;
-            }
-            h1{
-                font-size: 50px;
-                word-break: break-all;
-            }
-            .row{
-                margin: 8px -16px;
-            }
-            .row,
-            .row>.column{
-                padding: 8px;
-            }
-            .row::after{
-                content: "";
-                display: table;
-                clear: both;
-            }
-            .column{
-                float: left;
-                width: 25%;
-            }
-            @media screen and (max-width:900px){
-                .column{
-                    width: 50%;
-                }
-            }
-            @media screen and (max-width:600px){
-                .column{
-                    width: 100%;
-                }
-            }
-            .content{
-                background-color: white;
-                padding: 10px;
-            }
-        </style>
-    </head>
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
 
-    <body>
-        <div class="main">
-            <h1>Meu Portifolio</h1>
-            <hr/>
-            <h2>Franciel Ruam Ferreira Santos</h2>
-            <p>Bom, me chamo Franciel tenho 21 anos de idade e estou cursando atualmente o 3º ano de Engenharia de Software
-                no Instituto Federal do Paraná - Campus Paranavaí. Inicie recentemente num cargo como desenvolvedor back-end 
-                na empresa Upcode, com a situação do momento de COVID-19 os trabalhos são todos realizados de forma remota.
-            </p>
-            <p>CONTATOS EM ADICIONAR DE INSTAGRAN / FACEBOOK / LINKDIN E GITHUB</p>
+        body {
+            background-color: #f3f2f2;
+            padding: 20px;
+            font-family: 'Times New Roman', Times, serif;
+        }
 
-            <div class="row">
-                <div class="column">
-                    <div class="content">
-                        <img src="imagens/imagem1.png" alt="Imagem Teste" style="width: 100%;">
-                        <h3>Projeto 01</h3>
-                        <p>Lorem ipsum lacinia ornare sed lectus est iaculis himenaeos, quam tempor varius sed tempus metus urna taciti, ligula
-                           arcu mi pellentesque facilisis cras malesuada. cubilia vehicula nibh volutpat, auctor purus.</p>
-                    </div>
+        .main {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h1 {
+            font-size: 50px;
+            word-break: break-all;
+        }
+
+        .row {
+            margin: 4px -16px;
+        }
+
+        .row,
+        .row>.column {
+            padding: 8px;
+        }
+
+        .row::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .column {
+            float: left;
+            width: 50%;
+        }
+
+        @media screen and (max-width:900px) {
+            .column {
+                width: 50%;
+            }
+        }
+
+        @media screen and (max-width:600px) {
+            .column {
+                width: 100%;
+            }
+        }
+
+        .content {
+            background-color: white;
+            padding: 15px;
+        }
+
+        .foto-perfil {
+            height: 100%;
+            width: auto;
+            max-width: 100%;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <title>Meu Portifolio</title>
+
+
+    <div class="main">
+
+        <div class="row">
+            <center>
+                <img class="foto-perfil" src="imagens/perfil.jpg" alt="">
+                <h1 class="jumbotron-heading textBranco">Franciel Ruam</h1>
+                <p class="lead">
+                    Olá, meu nome é Franciel Ruam, tenho 21 anos e curso atualmente o 3ª ano de Engenharia de Software
+                    no Instituto Federal do Paraná - Campus Paranavaí, sou um apaixonado por motos, adoro velocidade e
+                    passeios na estrada. Hoje, sou um desenvolvedor Back-End Java na empresa Upcode.</p>
+
+                <div class="body">
+                    <a href="https://www.linkedin.com/in/franciel-ruam-995644174/"> <i
+                            class="textBranco fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Francielxyz"> <i class="textBranco icones fab fa-github"></i> </a>
+                    <a href="https://www.instagram.com/franciel_ruam/"> <i
+                            class="textBranco icones fab fa-instagram"></i>
+                    </a>
                 </div>
-                
-                <div class="column">
-                    <div class="content">
-                        <img src="imagens/imagem2.png" alt="Imagem Teste" style="width: 100%;">
-                        <h3>Projeto 02</h3>
-                        <p>Lorem ipsum lacinia ornare sed lectus est iaculis himenaeos, quam tempor varius sed tempus metus urna taciti, ligula
-                            arcu mi pellentesque facilisis cras malesuada. cubilia vehicula nibh volutpat, auctor purus.</p>
-                    </div>
-                </div>
 
-                <div class="column">
-                    <div class="content">
-                        <img src="imagens/imagem3.png" alt="Imagem Teste" style="width: 100%;">
-                        <h3>Projeto 03</h3>
-                        <p align="justify" >Lorem ipsum lacinia ornare sed lectus est iaculis himenaeos, quam tempor varius sed tempus metus urna taciti, ligula
-                            arcu mi pellentesque facilisis cras malesuada. cubilia vehicula nibh volutpat, auctor purus.</p>
-                    </div>
-                </div>
+            </center>
 
-                <div class="column">
-                    <div class="content">
-                        <img src="imagens/imagem4.png" alt="Imagem Teste" style="width: 100%;">
-                        <h3>Projeto 04</h3>
-                        <p>Lorem ipsum lacinia ornare sed lectus est iaculis himenaeos, quam tempor varius sed tempus metus urna taciti, ligula
-                            arcu mi pellentesque facilisis cras malesuada. cubilia vehicula nibh volutpat, auctor purus.</p>
-                    </div>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <div class="content">
+                    <img src="imagens/tela1.png" alt="Imagem Teste" style="width: 100%;"">
+                    <h3>Página Web Pedido Pizza</h3>
+                    <p>Projeto Realzido na Semana 2 de Desenvolvimento Spring/React, proporcionado Professor Nélio Alves
+                        da
+                        DevSuperior.</p>
+                    <ul>
+                        <li>Java</li>
+                        <li>React</li>
+                        <li>Spring Framework</li>
+                        <li>pgAdmin</li>
+                    </ul>
+                    <a href=" https://franciel-ruam-sds2.netlify.app/dashboard"> <button type="button"
+                        class="btn btn-sm btn-outline-sucess">Projeto</button> </a>
+                    <a href="https://github.com/Francielxyz/dsdeliver-sds2"> <button type="button"
+                            class="btn btn-sm btn-outline-primary">Código</button> </a>
                 </div>
-            </div>
-            
-            <div class="content"> 
-                <img src="./imagens/imagem5.png" style="width: 100%;">
-                <h3>Projeto Principal</h3>
-                <p>Lorem ipsum lacinia ornare sed lectus est iaculis himenaeos, quam tempor varius sed tempus metus urna taciti, ligula
-                    arc</p>
             </div>
         </div>
-    </body>
+
+        <div class="row">
+            <div class="column">
+                <div class="content">
+                    <img src="imagens/tela2.png" style="width: 100%;">
+                    <h3>Página Web Tela DeshBoard</h3>
+                    <p>Projeto Realzido na Semana 3 de Desenvolvimento Spring/React, proporcionado Professor Nélio Alves
+                        da
+                        DevSuperior.
+                    </p>
+                    <ul>
+                        <li>Java</li>
+                        <li>React</li>
+                        <li>Spring Framework</li>
+                        <li>pgAdmin</li>
+                    </ul>
+                    <div class="btn-group">
+                        <a href="https://franciel-ruam-sds3.netlify.app/"><button type="button"
+                                class="btn btn-sm btn-outline-sucess">Projeto</button></a>
+                        <a href="https://github.com/Francielxyz/dsdeliver-sds3"><button type="button"
+                                class="btn btn-sm btn-outline-primary">Código</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <div class="content">
+                    <img src="imagens/tela3.png" style="width: 100%;">
+                    <h3>Jogo de Xadrex</h3>
+                    <p>Projeto Realzido em um Curso da Udemy, Onde é Feito um Jogo de Xadrex Usando o Terminaal de
+                        Comando do Computador.</p>
+                    <ul>
+                        <li>Java</li>
+                        <li>Eclipse</li>
+                        <li>CMD</li>
+                    </ul>
+                    <a href="https://github.com/Francielxyz/game-xadrex-java"> <button type="button"
+                            class="btn btn-sm btn-outline-primary">Código</button> </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
 </html>
